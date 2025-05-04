@@ -6,6 +6,7 @@ import Table from './ui/table'
 import Pagination from './ui/pagination'
 
 export type UserType = {
+  id: string
   username: string
   name: string
   email: string
