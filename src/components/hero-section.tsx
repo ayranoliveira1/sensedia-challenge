@@ -2,8 +2,8 @@ import { FaDribbble, FaAlignLeft, FaTrophy } from 'react-icons/fa'
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#8556AA] h-[100px] px-5">
-      <div className="max-w-[1300px] mx-auto text-white h-full flex items-center gap-12">
+    <section className="bg-[#8556AA] h-[100px]">
+      <div className="max-w-[1300px] mx-auto text-white h-full flex items-center gap-12 px-8">
         <div className="flex items-center gap-3">
           <span className="bg-white px-1 py-[6px] rounded-sm">
             <FaDribbble size={36} className="text-[#8556AA]" />
