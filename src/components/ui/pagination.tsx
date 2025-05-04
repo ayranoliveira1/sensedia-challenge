@@ -21,56 +21,54 @@ const Pagination = ({
         <button
           onClick={() => goToPage(page - 1)}
           disabled={page === 1}
-          className="px-4 py-1 border rounded-full disabled:opacity-50"
+          className="px-4 py-1 border border-[#9E9E9E] rounded-full disabled:opacity-50"
         >
           Anterior
         </button>
 
         <button
           onClick={() => goToPage(1)}
-          className={`w-8 h-8 rounded-full border text-center ${
-            page === 1 ? 'bg-gray-400 text-white font-bold' : ''
+          className={`w-8 h-8 rounded-full border border-[#9E9E9E] text-center ${
+            page <= 2 && 'hidden'
           }`}
         >
           1
         </button>
 
-        <span className="text-gray-500 select-none">...</span>
+        {page > 2 && <span className="w-4 text-center">...</span>}
 
-        <div className="flex divide-x border rounded-full overflow-hidden">
+        <div className="flex divide-x border border-[#9E9E9E] rounded-full overflow-hidden">
           {Array.from({ length: 3 }, (_, i) => {
-            let centerPage = page
-            if (page <= 2) centerPage = 3
-            else if (page >= totalPages - 1) centerPage = totalPages - 2
-
-            const p = centerPage - 1 + i
+            const p =
+              page === 1
+                ? i + 1
+                : page === totalPages
+                  ? page - 2 + i
+                  : page - 1 + i
 
             return (
-              p > 1 &&
-              p < totalPages && (
-                <button
-                  key={p}
-                  onClick={() => goToPage(p)}
-                  className={`w-8 h-8 text-sm text-center ${
-                    p === page
-                      ? 'bg-gray-400 text-white font-bold'
-                      : 'bg-white text-gray-700'
-                  }`}
-                >
-                  {p}
-                </button>
-              )
+              <button
+                key={p}
+                onClick={() => goToPage(p)}
+                className={`w-8 h-8 text-sm text-center ${
+                  p === page
+                    ? 'bg-[#9E9E9E] text-white font-bold'
+                    : 'bg-white text-gray-700'
+                }`}
+              >
+                {p}
+              </button>
             )
           })}
         </div>
 
-        <span className="text-gray-500 select-none">...</span>
+        {page < totalPages - 1 && <span className="w-4 text-center">...</span>}
 
         {totalPages > 1 && (
           <button
             onClick={() => goToPage(totalPages)}
-            className={`w-8 h-8 rounded-full border text-center ${
-              page === totalPages ? 'bg-gray-400 text-white font-bold' : ''
+            className={`w-8 h-8 rounded-full border border-[#9E9E9E] text-center ${
+              page >= 6 && 'hidden'
             }`}
           >
             {totalPages}
@@ -80,7 +78,7 @@ const Pagination = ({
         <button
           onClick={() => goToPage(page + 1)}
           disabled={page === totalPages}
-          className="px-4 py-1 border rounded-full disabled:opacity-50"
+          className="px-4 py-1 border border-[#9E9E9E] rounded-full disabled:opacity-50"
         >
           Próximo
         </button>
@@ -89,7 +87,7 @@ const Pagination = ({
       <div className="flex items-center space-x-1">
         <span>Ir para a página</span>
         <select
-          className="border rounded px-2 py-1 text-sm"
+          className="border-b border-[#9E9E9E] px-2 py-1 text-sm"
           value={page}
           onChange={(e) => goToPage(Number(e.target.value))}
         >

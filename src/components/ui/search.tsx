@@ -12,7 +12,7 @@ const Search: React.FC<SearchProps> = ({ search, setSearch, setPage }) => {
       <input
         type="text"
         placeholder="Procurar"
-        className="w-full border-b bg-gray-100 py-2 pl-5 text-sm focus:outline-none"
+        className="w-full border-b-[2px] border-[#9E9E9E] bg-gray-100 py-2 pl-5 text-sm focus:outline-none"
         value={search}
         onChange={(e) => {
           setSearch(e.target.value)

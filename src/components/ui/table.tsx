@@ -1,10 +1,10 @@
 import { UserType } from '../user-table'
+import { Trash2 } from 'lucide-react'
+import { AlertDialog, AlertDialogTrigger } from './alert-dialog'
+import DeleteUserModal from '../delete-user-modal'
 
 interface TableProps {
-  paginatedUsers: Pick<
-    UserType,
-    'username' | 'name' | 'email' | 'city' | 'days' | 'posts' | 'albums'
-  >[]
+  paginatedUsers: UserType[]
 }
 
 const Table = ({ paginatedUsers }: TableProps) => {
@@ -23,7 +23,10 @@ const Table = ({ paginatedUsers }: TableProps) => {
       </thead>
       <tbody>
         {paginatedUsers.map((user, index) => (
-          <tr key={index} className="border-b hover:bg-gray-50">
+          <tr
+            key={index}
+            className="border-b hover:bg-gray-50 group transition-colors duration-300"
+          >
             <td className="py-2 pr-4 font-bold text-gray-700">
               {user.username}
             </td>
@@ -33,6 +36,21 @@ const Table = ({ paginatedUsers }: TableProps) => {
             <td className="py-2 pr-4">{user.days}</td>
             <td className="py-2 pr-4 text-center">{user.posts}</td>
             <td className="py-2 text-center">{user.albums}</td>
+            <td className="py-2 text-center">
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <button
+                    onClick={() => {}}
+                    className="hidden group-hover:inline-flex items-center cursor-pointer justify-center text-red-500 hover:text-red-700 transition-colors"
+                    title="Excluir usuário"
+                  >
+                    <Trash2 className="w-5 h-5" />
+                  </button>
+                </AlertDialogTrigger>
+
+                <DeleteUserModal />
+              </AlertDialog>
+            </td>
           </tr>
         ))}
       </tbody>
