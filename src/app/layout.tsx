@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import { Toaster } from 'sonner'
+import Footer from '@/components/footer'
+import Header from '@/components/header'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -19,8 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased`}>
-        {children}
+      <body
+        className={`${roboto.className} antialiased min-h-screen flex flex-col`}
+      >
+        <Header />
+        <div className="flex-1">{children}</div>
+        <Footer />
         <Toaster />
       </body>
     </html>
