@@ -1,4 +1,4 @@
-import { daysOfTheWeek } from './fake-database'
+import { daysOfTheWeek } from './generate-metatada'
 
 export function formatDays(days: string[]): string {
   const orderedDays = daysOfTheWeek
@@ -38,7 +38,8 @@ export function formatDays(days: string[]): string {
 
   const isSingleSequence = sequences.length === 1 && sequences[0].length > 1
   if (isSingleSequence) {
-    const [start, end] = sequences[0]
+    const start = sequences[0][0]
+    const end = sequences[0][sequences[0].length - 1]
     return `${daysOfTheWeek[start]} a ${daysOfTheWeek[end]}`
   }
 
