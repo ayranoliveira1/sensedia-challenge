@@ -33,7 +33,7 @@ export const createUser = async ({
     return res.statusText.toString()
   }
 
-  revalidatePath('/')
+  revalidatePath('/users')
 
   const data = await res.json()
 

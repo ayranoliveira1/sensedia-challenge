@@ -1,0 +1,20 @@
+import UserForm from '@/app/users/new/components/user-form'
+import InfoBlocks from './components/info-blocks'
+
+const UserNewPage = () => {
+  return (
+    <main className="max-w-[1300px] mx-auto px-8 mb-10">
+      <section className="mt-10">
+        <h2 className="text-2xl font-bold">Registro</h2>
+
+        <InfoBlocks />
+
+        <div className="mt-8">
+          <UserForm />
+        </div>
+      </section>
+    </main>
+  )
+}
+
+export default UserNewPage

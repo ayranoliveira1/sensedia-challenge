@@ -5,7 +5,7 @@ import {
   AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogTitle,
-} from '@/components/ui/alert-dialog'
+} from '../../../components/ui/alert-dialog'
 import { deleteUser } from '@/http/delete-user'
 
 import { toast } from 'sonner'

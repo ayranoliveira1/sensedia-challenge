@@ -1,5 +1,4 @@
 import HeroSection from '@/components/hero-section'
-import UserForm from '@/components/user-form'
 import UserTable, { UserType } from '@/app/users/components/user-table'
 import { getAlbums } from '@/http/get-albums'
 import { getPosts } from '@/http/get-posts'
@@ -69,14 +68,6 @@ const UsersPage = async () => {
 
         <section className="mt-2">
           <UserTable users={users} />
-        </section>
-
-        <section className="mt-10">
-          <h2 className="text-2xl font-bold">Registro</h2>
-
-          <div className="mt-8">
-            <UserForm />
-          </div>
         </section>
       </main>
     </>

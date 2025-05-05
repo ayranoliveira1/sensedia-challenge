@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { createUser, CreateUsersResponse } from '@/http/create-user'
 import { toast } from 'sonner'
 import { createUserMetaData } from '@/http/create-user-metadata'
+import { useRouter } from 'next/navigation'
 
 const schema = z.object({
   username: z.string().min(1, 'Nome de usuário é obrigatório'),
@@ -40,6 +41,8 @@ const UserForm = () => {
     resolver: zodResolver(schema),
   })
 
+  const route = useRouter()
+
   const onSubmit = async (data: FormData) => {
     try {
       const res = await createUser({
@@ -72,8 +75,9 @@ const UserForm = () => {
       }
 
       reset()
-
       toast.success('Usuário criado com sucesso')
+
+      route.push('/users')
     } catch (error) {
       console.error('Error creating user:', error)
       toast.error('Erro ao criar usuário')

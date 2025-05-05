@@ -27,7 +27,7 @@ export const createUserMetaData = async ({
     throw new Error('Failed to fetch user metadata')
   }
 
-  revalidatePath('/')
+  revalidatePath('/users')
 
   return 'success'
 }

@@ -17,7 +17,7 @@ export const deleteUser = async (user_id: string) => {
     throw new Error('Failed to delete user')
   }
 
-  revalidatePath('/')
+  revalidatePath('/users')
 
   const data = await res.json()
 
