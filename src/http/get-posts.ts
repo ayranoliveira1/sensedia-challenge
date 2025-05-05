@@ -1,6 +1,6 @@
 'use server'
 
-interface Posts {
+export interface Posts {
   id: string
   content: string
   user_id: string
