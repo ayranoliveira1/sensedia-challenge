@@ -4,7 +4,7 @@ import InfoBlocks from './components/info-blocks'
 const UserNewPage = () => {
   return (
     <main className="max-w-[1300px] mx-auto px-8 mb-10">
-      <section className="mt-10">
+      <section className="mt-5">
         <h2 className="text-2xl font-bold">Registro</h2>
 
         <InfoBlocks />
