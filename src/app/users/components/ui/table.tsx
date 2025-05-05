@@ -1,7 +1,10 @@
 import { UserType } from '../user-table'
 import { Trash2 } from 'lucide-react'
-import { AlertDialog, AlertDialogTrigger } from './alert-dialog'
-import DeleteUserModal from '../delete-user-modal'
+import {
+  AlertDialog,
+  AlertDialogTrigger,
+} from '../../../../components/ui/alert-dialog'
+import DeleteUserModal from '@/app/users/components/delete-user-modal'
 
 interface TableProps {
   paginatedUsers: UserType[]
@@ -30,13 +33,13 @@ const Table = ({ paginatedUsers }: TableProps) => {
             <td className="py-2 pr-4 font-bold text-gray-700">
               {user.username}
             </td>
-            <td className="py-2 pr-4">{user.name}</td>
-            <td className="py-2 pr-4">{user.email}</td>
-            <td className="py-2 pl-[1px]">{user.city}</td>
-            <td className="py-2 pr-4">{user.days}</td>
-            <td className="py-2 pr-4 text-center">{user.posts}</td>
-            <td className="py-2 text-center">{user.albums}</td>
-            <td className="py-2 text-center">
+            <td className="h-18 pr-4">{user.name}</td>
+            <td className="h-18 pr-4">{user.email}</td>
+            <td className="h-18 pl-[1px]">{user.city}</td>
+            <td className="h-18 pr-4">{user.days}</td>
+            <td className="h-18 pr-4 text-center">{user.posts}</td>
+            <td className="h-18 text-center">{user.albums}</td>
+            <td className="h-18 text-center">
               <AlertDialog>
                 <AlertDialogTrigger asChild>
                   <button
@@ -48,7 +51,7 @@ const Table = ({ paginatedUsers }: TableProps) => {
                   </button>
                 </AlertDialogTrigger>
 
-                <DeleteUserModal />
+                <DeleteUserModal user_id={user.id} />
               </AlertDialog>
             </td>
           </tr>

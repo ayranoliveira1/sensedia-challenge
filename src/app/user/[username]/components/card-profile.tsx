@@ -1,4 +1,4 @@
-import { UserType } from '@/components/user-table'
+import { UserType } from '@/app/users/components/user-table'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 
