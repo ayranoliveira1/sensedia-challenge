@@ -2,14 +2,15 @@
 
 import { UserMeta } from '@/lib/fake-database'
 
-interface User {
+interface UserMetaData {
   user_id: string
   days: string[]
   city: string
+  username: string
 }
 
 interface GetUsersResponse {
-  users: User[]
+  users: UserMetaData[]
 }
 
 export const getUsersMetaData = async (): Promise<GetUsersResponse> => {
@@ -28,6 +29,7 @@ export const getUsersMetaData = async (): Promise<GetUsersResponse> => {
       user_id: user.user_id,
       days: user.days || [],
       city: user.city || 'Unknown',
+      username: user.username || 'Unknown',
     })),
   }
 }

@@ -9,13 +9,13 @@ export async function GET() {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json()
-    const { user_id, city, days } = body
+    const { user_id, city, days, username } = body
 
-    if (!user_id || !city || !Array.isArray(days)) {
+    if (!user_id || !city || !Array.isArray(days) || !username) {
       return NextResponse.json(
         {
           error:
-            'Invalid input. Requires user_id (string), city (string), and days (array)',
+            'Invalid input. Requires user_id (string), city (string), days (array), and username (string)',
         },
         { status: 400 },
       )
@@ -33,6 +33,7 @@ export async function POST(req: NextRequest) {
         user_id,
         city,
         days: [...days],
+        username,
       },
     ]
 

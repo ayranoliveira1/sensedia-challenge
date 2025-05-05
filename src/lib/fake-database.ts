@@ -5,6 +5,7 @@ export interface UserMeta {
   user_id: string
   days: string[]
   city: string
+  username: string
 }
 
 const filePath = path.join(process.cwd(), 'data', 'user-meta.json')

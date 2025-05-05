@@ -59,7 +59,10 @@ const UserForm = () => {
         user_id: id,
         days: data.days,
         city: data.city,
+        username: data.username,
       }
+
+      console.log('userMetaData', userMetaData)
 
       const result = await createUserMetaData(userMetaData)
 
