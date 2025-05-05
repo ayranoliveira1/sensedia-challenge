@@ -1,6 +1,6 @@
 'use server'
 
-interface Album {
+export interface Albums {
   id: string
   title: string
   description: string
@@ -10,7 +10,7 @@ interface Album {
 }
 
 interface GetAlbumsResponse {
-  albums: Album[]
+  albums: Albums[]
 }
 
 export const getAlbums = async (): Promise<GetAlbumsResponse> => {
