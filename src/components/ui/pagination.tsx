@@ -21,14 +21,14 @@ const Pagination = ({
         <button
           onClick={() => goToPage(page - 1)}
           disabled={page === 1}
-          className="px-4 py-1 border border-[#9E9E9E] rounded-full disabled:opacity-50"
+          className="px-4 py-1 border border-[#9E9E9E] cursor-pointer rounded-full disabled:opacity-50"
         >
           Anterior
         </button>
 
         <button
           onClick={() => goToPage(1)}
-          className={`w-8 h-8 rounded-full border border-[#9E9E9E] text-center ${
+          className={`w-8 h-8 rounded-full border border-[#9E9E9E] cursor-pointer text-center ${
             page <= 2 && 'hidden'
           }`}
         >
@@ -50,7 +50,7 @@ const Pagination = ({
               <button
                 key={p}
                 onClick={() => goToPage(p)}
-                className={`w-8 h-8 text-sm text-center ${
+                className={`w-8 h-8 text-sm text-center cursor-pointer ${
                   p === page
                     ? 'bg-[#9E9E9E] text-white font-bold'
                     : 'bg-white text-gray-700'
@@ -67,7 +67,7 @@ const Pagination = ({
         {totalPages > 1 && (
           <button
             onClick={() => goToPage(totalPages)}
-            className={`w-8 h-8 rounded-full border border-[#9E9E9E] text-center ${
+            className={`w-8 h-8 rounded-full border border-[#9E9E9E] cursor-pointer text-center ${
               page >= 6 && 'hidden'
             }`}
           >
@@ -78,7 +78,7 @@ const Pagination = ({
         <button
           onClick={() => goToPage(page + 1)}
           disabled={page === totalPages}
-          className="px-4 py-1 border border-[#9E9E9E] rounded-full disabled:opacity-50"
+          className="px-4 py-1 border border-[#9E9E9E] cursor-pointer rounded-full disabled:opacity-50"
         >
           Próximo
         </button>
@@ -87,7 +87,7 @@ const Pagination = ({
       <div className="flex items-center space-x-1">
         <span>Ir para a página</span>
         <select
-          className="border-b border-[#9E9E9E] px-2 py-1 text-sm"
+          className="border-b border-[#9E9E9E] cursor-pointer px-2 py-1 text-sm"
           value={page}
           onChange={(e) => goToPage(Number(e.target.value))}
         >

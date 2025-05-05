@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { CircleHelpIcon } from 'lucide-react'
 import { IoAppsSharp } from 'react-icons/io5'
+import Link from 'next/link'
 
 const user = {
   name: 'Ayran Oliveira',
@@ -8,12 +9,14 @@ const user = {
 
 const Header = () => {
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <section className="bg-[#3D3D3D] h-[87px] w-full text-white flex items-center px-8">
-        <Image src="/logo.png" alt="Company Logo" width={130} height={130} />
+        <Link href="/">
+          <Image src="/logo.png" alt="Company Logo" width={130} height={130} />
+        </Link>
       </section>
 
-      <nav className="flex items-center justify-between px-8 h-[66px] border-b border-gray-300">
+      <nav className="flex items-center justify-between px-8 h-[66px] border-b bg-white border-gray-300">
         <div className="flex items-center gap-2">
           <Image
             src="/logo-sensedia.png"
@@ -36,7 +39,10 @@ const Header = () => {
           <div className="flex items-center gap-4">
             <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#8556AA] text-white font-bold">
               {user.name
+                .trim()
                 .split(' ')
+                .filter(Boolean)
+                .slice(0, 2)
                 .map((n) => n[0])
                 .join('')}
             </span>

@@ -40,7 +40,9 @@ export async function saveUsersMeta(data: UserMeta[]) {
   })
 
   data.forEach((meta) => {
-    userMetaMap.set(meta.user_id, meta)
+    if (!userMetaMap.has(meta.user_id)) {
+      userMetaMap.set(meta.user_id, meta)
+    }
   })
 
   const mergedData = Array.from(userMetaMap.values())

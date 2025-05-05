@@ -11,9 +11,10 @@ export type UserType = {
   name: string
   email: string
   city: string
-  days: string
+  days: string | string[]
   posts: number
   albums: number
+  created_at: Date
 }
 
 type UserTableProps = {
