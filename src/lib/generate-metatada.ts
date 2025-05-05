@@ -1,6 +1,7 @@
 type UserMeta = {
   days: string[]
   city: string
+  username: string
 }
 
 const userMetaData: Record<string, UserMeta> = {}
@@ -50,16 +51,61 @@ export function randomCity(): string {
   return cities[randomIndex]
 }
 
+export function randomUserName(): string {
+  const names = [
+    'Sonya64',
+    'selena89',
+    'laverna58',
+    'Diana',
+    'Eve',
+    'Frank',
+    'Gina',
+    'Hannah',
+    'Ivy',
+    'Jack',
+    'Kathy',
+    'Liam',
+    'Mia',
+    'Noah',
+    'Olivia',
+    'Paul',
+    'Quinn',
+    'Ryan',
+    'Sophia',
+    'Tyler',
+    'Uma',
+    'Violet',
+    'Willow',
+    'Xander',
+    'Yara',
+    'Zoe',
+  ]
+  const randomIndex = Math.floor(Math.random() * names.length)
+  const randomPrefix = Math.random().toString(36).substring(2, 4)
+  return `${randomPrefix}${names[randomIndex]}`
+}
+
 export function generateUserMetaData(user_id: string) {
   if (!userMetaData[user_id]) {
     const days = randomDays()
     const city = randomCity()
+    const username = randomUserName()
 
     userMetaData[user_id] = {
       days,
       city,
+      username,
     }
   }
 
   return userMetaData[user_id]
+}
+
+export function getAllUsersMetaData() {
+  const usersMetaData = Object.entries(userMetaData).map(([user_id, meta]) => ({
+    user_id,
+    ...meta,
+  }))
+
+  return usersMetaData
 }

@@ -29,3 +29,21 @@ export async function readUserMeta() {
 export async function writeUserMeta(data: UserMeta[]) {
   await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf8')
 }
+
+export async function saveUsersMeta(data: UserMeta[]) {
+  const existingData = await readUserMeta()
+
+  const userMetaMap = new Map<string, UserMeta>()
+
+  existingData.forEach((meta: UserMeta) => {
+    userMetaMap.set(meta.user_id, meta)
+  })
+
+  data.forEach((meta) => {
+    userMetaMap.set(meta.user_id, meta)
+  })
+
+  const mergedData = Array.from(userMetaMap.values())
+
+  await writeUserMeta(mergedData)
+}

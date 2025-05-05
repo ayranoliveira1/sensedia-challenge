@@ -7,8 +7,12 @@ import { getAlbums } from '@/http/get-albums'
 import { getPosts } from '@/http/get-posts'
 import { getUsersMetaData } from '@/http/get-user-metadata'
 import { getUsers } from '@/http/get-users'
+import { saveUsersMeta } from '@/lib/fake-database'
 import { formatDays } from '@/lib/format-days'
-import { generateUserMetaData } from '@/lib/generate-metatada'
+import {
+  generateUserMetaData,
+  getAllUsersMetaData,
+} from '@/lib/generate-metatada'
 
 export default async function Home() {
   const [responseUser, responsePost, responseAlbum, responseMetaData] =
@@ -28,7 +32,7 @@ export default async function Home() {
 
     const username =
       responseMetaData.users.filter((meta) => meta.user_id === user.id)[0]
-        ?.username || 'meta.username'
+        ?.username || meta.username
 
     const days = formatDays(
       responseMetaData.users.filter((meta) => meta.user_id === user.id)[0]
@@ -50,6 +54,10 @@ export default async function Home() {
       albums: albums.filter((album) => album.user_id === user.id).length,
     }
   })
+
+  const userMeta = getAllUsersMetaData()
+
+  await saveUsersMeta(userMeta)
 
   return (
     <>
