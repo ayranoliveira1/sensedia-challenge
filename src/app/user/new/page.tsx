@@ -3,9 +3,9 @@ import UserForm from './components/user-form'
 
 const UserNewPage = () => {
   return (
-    <main className="max-w-[1300px] mx-auto px-8 mb-10">
+    <main className="lg:max-w-[1300px] mx-auto px-8 mb-10">
       <section className="mt-5">
-        <h2 className="text-2xl font-bold">Registro</h2>
+        <h2 className="lg:text-2xl text-lg font-bold">Registro</h2>
 
         <InfoBlocks />
 

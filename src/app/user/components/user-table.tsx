@@ -51,7 +51,9 @@ export default function UserTable({ users }: UserTableProps) {
     <div className="py-4 bg-white rounded-md">
       <Search search={search} setPage={setPage} setSearch={setSearch} />
 
-      <Table paginatedUsers={paginatedUsers} />
+      <div className="overflow-x-scroll lg:overflow-x-auto">
+        <Table paginatedUsers={paginatedUsers} />
+      </div>
 
       <Pagination
         filteredUsers={filteredUsers}

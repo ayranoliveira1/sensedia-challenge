@@ -1,6 +1,6 @@
-import { UserType } from '@/app/users/components/user-table'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
+import { UserType } from '../../components/user-table'
 
 interface CardProfileProps {
   user: UserType
@@ -8,7 +8,7 @@ interface CardProfileProps {
 
 const CardProfile = ({ user }: CardProfileProps) => {
   return (
-    <div className="bg-white p-4 md:p-8 h-full">
+    <main className="bg-white p-4 md:p-8 h-full">
       <div className="mx-auto max-w-2xl overflow-hidden rounded-lg border border-purple-200 bg-white shadow-md">
         <div className="bg-[#8556AA] pb-0 pt-6">
           <div className="flex flex-col items-center justify-center pb-6">
@@ -29,7 +29,9 @@ const CardProfile = ({ user }: CardProfileProps) => {
         <div className="bg-white p-6">
           <div className="space-y-6">
             <div className="text-center">
-              <h1 className="text-2xl font-bold text-[#8556AA]">{user.name}</h1>
+              <h1 className="lg:text-2xl text-xl font-bold text-[#8556AA]">
+                {user.name}
+              </h1>
               <p className="text-gray-500">@{user.username}</p>
             </div>
 
@@ -86,7 +88,7 @@ const CardProfile = ({ user }: CardProfileProps) => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

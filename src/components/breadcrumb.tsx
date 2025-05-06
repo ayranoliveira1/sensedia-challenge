@@ -21,13 +21,13 @@ export default function Breadcrumb() {
           <li key={i} className="flex items-center gap-1">
             <FaCaretRight className="size-3 text-gray-300 mb-[2px]" />
             {i === breadcrumbs.length - 1 ? (
-              <span className="font-semibold capitalize text-gray-900">
+              <span className="font-semibold capitalize lg:text-sm text-xs text-gray-900">
                 {crumb.label === 'new' ? 'Registro' : crumb.label}
               </span>
             ) : (
               <Link
                 href={crumb.href}
-                className="hover:underline capitalize text-[#7E50CE]"
+                className="hover:underline capitalize lg:text-sm text-xs text-[#7E50CE]"
               >
                 {crumb.label}
               </Link>

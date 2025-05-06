@@ -9,13 +9,13 @@ const UsersPage = async () => {
     <>
       <HeroSection />
 
-      <main className="max-w-[1300px] mx-auto px-8 mb-10">
+      <main className="lg:max-w-[1300px] mx-auto px-4 lg:px-8 mb-10 overflow-hidden">
         <section className="mt-5 flex items-center justify-between">
-          <h1 className="text-2xl font-bold">Usuários</h1>
+          <h1 className="lg:text-2xl text-lg font-bold">Usuários</h1>
 
           <Link
             href="/user/new"
-            className="bg-[#7E50CE] text-white px-4 py-2 rounded-3xl"
+            className="bg-[#7E50CE] text-sm lg:text-base text-white px-4 py-2 rounded-3xl"
           >
             Adicionar Usuário
           </Link>

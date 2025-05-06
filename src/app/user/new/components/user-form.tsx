@@ -77,7 +77,7 @@ const UserForm = () => {
       reset()
       toast.success('Usuário criado com sucesso')
 
-      route.push('/users')
+      route.push('/user')
     } catch (error) {
       console.error('Error creating user:', error)
       toast.error('Erro ao criar usuário')
@@ -101,8 +101,8 @@ const UserForm = () => {
     >
       <h2 className="text-lg font-semibold text-[#919191]">REGISTRO</h2>
 
-      <div className="grid grid-cols-2 gap-4 w-full mt-6">
-        <div className="flex flex-col gap-12">
+      <div className="grid lg:grid-cols-2 lg:gap-4 gap-8 w-full mt-6">
+        <div className="flex flex-col lg:gap-12 gap-8">
           <div>
             <input
               type="text"
@@ -144,7 +144,7 @@ const UserForm = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-8 lg:gap-12">
           <div>
             <input
               type="text"
@@ -184,18 +184,18 @@ const UserForm = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 mt-20">
+      <div className="flex items-center gap-4 mt-8 lg:mt-20">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-purple-600 cursor-pointer text-white font-semibold px-6 py-2 rounded-full hover:bg-purple-700 disabled:opacity-50"
+          className="bg-purple-600 cursor-pointer lg:text-base text-sm text-white font-semibold px-6 py-2 rounded-full hover:bg-purple-700 disabled:opacity-50"
         >
           {isSubmitting ? 'Enviando...' : 'REGISTRAR'}
         </button>
         <button
           type="button"
           onClick={() => reset()}
-          className="text-purple-700 font-semibold hover:bg-gray-200 px-6 py-2 rounded-full cursor-pointer"
+          className="text-purple-700 font-semibold lg:text-base text-sm hover:bg-gray-200 px-6 py-2 rounded-full cursor-pointer"
         >
           CANCELAR
         </button>

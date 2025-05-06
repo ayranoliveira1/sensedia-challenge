@@ -43,14 +43,14 @@ const UserDropdown: React.FC<UserDropDownProps> = ({ children, options }) => {
 
   return (
     <div className="relative" ref={dropDownRef}>
-      <div
+      <button
         onClick={toggleDropDown}
-        className="cursor-pointer"
+        className="cursor-pointer focus:outline-offset-2 py-[2px] px-2 focus:ring-4 focus:ring-gray-200 rounded-md  transition-colors duration-200"
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
         {children}
-      </div>
+      </button>
 
       <div
         className={`absolute right-0 mt-2 w-52 rounded-md shadow-lg focus:outline-none z-10 overflow-hidden bg-neutral-900 text-white transition-all duration-200 origin-top-right ${

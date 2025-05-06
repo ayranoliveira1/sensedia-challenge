@@ -12,13 +12,15 @@ export default function InfoBlock({
   description,
 }: InfoBlockProps) {
   return (
-    <div className="flex flex-col mt-10">
-      <h3 className="text-lg font-medium text-[#8556AA] mb-2">{title}</h3>
+    <div className="flex flex-col">
+      <h3 className="lg:text-lg text-sm font-medium text-[#8556AA] mb-2">
+        {title}
+      </h3>
       <div className="flex items-center gap-4">
-        <div className="rounded-full flex items-center justify-center text-[#8556AA] mr-4 flex-shrink-0">
+        <div className="rounded-full flex items-center justify-center lg:text-base text-sm text-[#8556AA] mr-4 flex-shrink-0">
           {icon}
         </div>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 lg:text-base text-xs">{description}</p>
       </div>
     </div>
   )

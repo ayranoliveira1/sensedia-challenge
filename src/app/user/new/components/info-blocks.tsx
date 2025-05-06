@@ -3,7 +3,7 @@ import InfoBlock from './info-block'
 
 export default function InfoBlocks() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:mt-8 mt-4 mb-8">
       <InfoBlock
         icon={<FaLifeRing className="size-12" />}
         title="Precisa de ajuda?"

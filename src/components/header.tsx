@@ -11,37 +11,62 @@ const Header = async () => {
 
   return (
     <header className="sticky top-0 z-50">
-      <section className="bg-[#3D3D3D] h-[87px] w-full text-white flex items-center px-8">
+      <section className="bg-[#3D3D3D] lg:h-[87px] h-16 w-full text-white flex items-center px-3 lg:px-8">
         <Link href="/">
-          <Image src="/logo.png" alt="Company Logo" width={130} height={130} />
+          <Image
+            className="hidden lg:block"
+            src="/logo.png"
+            alt="Company Logo"
+            width={130}
+            height={130}
+          />
+
+          <Image
+            className="lg:hidden"
+            src="/logo.png"
+            alt="Company Logo"
+            width={90}
+            height={60}
+          />
         </Link>
       </section>
 
-      <nav className="flex items-center justify-between px-8 h-[66px] border-b bg-white border-gray-300">
+      <nav className="flex items-center justify-between lg:px-8 px-3 h-[66px] border-b bg-white border-gray-300">
         <div className="flex items-center gap-2">
           <Image
+            className="lg:block hidden"
             src="/logo-sensedia.png"
             alt="Company Logo"
             width={28}
             height={28}
           />
 
-          <h1 className="font-bold text-sm text-[#8556AA]">BEM-VINDO</h1>
+          <Image
+            className="lg:hidden"
+            src="/logo-sensedia.png"
+            alt="Company Logo"
+            width={16}
+            height={16}
+          />
+
+          <h1 className="font-bold text-xs lg:text-sm text-[#8556AA]">
+            BEM-VINDO
+          </h1>
 
           <Breadcrumb />
         </div>
 
         <div className="flex items-center gap-1">
-          <div className="flex items-center gap-5">
+          <div className="lg:flex hidden items-center gap-5">
             <CircleHelpIcon size={22} />
             <IoAppsSharp size={22} />
           </div>
 
-          <div className="ml-10 mr-1 w-[3px] h-[40px] bg-gray-300"></div>
+          <div className="ml-10 mr-1 w-[3px] h-[40px] bg-gray-300 hidden lg:block"></div>
 
           <UserDropDown options={userProfile.menu}>
-            <div className="flex items-center gap-4">
-              <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#8556AA] text-white font-bold">
+            <div className="flex items-center gap-1 lg:gap-4">
+              <span className="flex items-center justify-center text-xs lg:text-base lg:w-10 w-7 lg:h-10 min-h-7 rounded-full bg-[#8556AA] text-white font-bold">
                 {userProfile.name
                   .trim()
                   .split(' ')
@@ -51,7 +76,7 @@ const Header = async () => {
                   .join('')}
               </span>
 
-              <p className="text-sm">{userProfile.name}</p>
+              <p className="lg:text-sm text-xs">{userProfile.name}</p>
             </div>
           </UserDropDown>
         </div>
