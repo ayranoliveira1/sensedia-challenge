@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { CircleHelpIcon } from 'lucide-react'
 import { IoAppsSharp } from 'react-icons/io5'
 import Link from 'next/link'
+import UserDropDown from './user-dropdown'
 
 const user = {
   name: 'Ayran Oliveira',
@@ -36,19 +37,21 @@ const Header = () => {
 
           <div className="ml-10 mr-1 w-[3px] h-[40px] bg-gray-300"></div>
 
-          <div className="flex items-center gap-4">
-            <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#8556AA] text-white font-bold">
-              {user.name
-                .trim()
-                .split(' ')
-                .filter(Boolean)
-                .slice(0, 2)
-                .map((n) => n[0])
-                .join('')}
-            </span>
+          <UserDropDown>
+            <div className="flex items-center gap-4">
+              <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#8556AA] text-white font-bold">
+                {user.name
+                  .trim()
+                  .split(' ')
+                  .filter(Boolean)
+                  .slice(0, 2)
+                  .map((n) => n[0])
+                  .join('')}
+              </span>
 
-            <p className="text-sm">{user.name}</p>
-          </div>
+              <p className="text-sm">{user.name}</p>
+            </div>
+          </UserDropDown>
         </div>
       </nav>
     </header>
