@@ -25,7 +25,5 @@ export async function getAlbumsByUserId(
 
   const data = await res.json()
 
-  console.log('User data:', data)
-
   return data
 }

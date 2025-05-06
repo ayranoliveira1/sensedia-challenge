@@ -11,8 +11,6 @@ import {
 } from '@/lib/generate-metatada'
 
 const UserTableServer = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 4000))
-
   const [responseUser, responsePost, responseAlbum, responseMetaData] =
     await Promise.all([getUsers(), getPosts(), getAlbums(), getUsersMetaData()])
 

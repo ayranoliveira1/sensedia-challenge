@@ -34,9 +34,11 @@ export default async function UserPage({ params }: UserPageProps) {
     )
   }
 
-  const userData = await getUserById(userMetaData.user_id)
-  const userPosts = await getPostsByUserId(userMetaData.user_id)
-  const userAlbums = await getAlbumsByUserId(userMetaData.user_id)
+  const [userData, userPosts, userAlbums] = await Promise.all([
+    getUserById(userMetaData.user_id),
+    getPostsByUserId(userMetaData.user_id),
+    getAlbumsByUserId(userMetaData.user_id),
+  ])
 
   if (!userData || !userPosts || !userAlbums) {
     return (

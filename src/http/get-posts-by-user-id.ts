@@ -25,7 +25,5 @@ export async function getPostsByUserId(
 
   const data = await res.json()
 
-  console.log('User data:', data)
-
   return data
 }

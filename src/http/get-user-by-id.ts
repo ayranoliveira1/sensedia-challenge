@@ -23,7 +23,5 @@ export async function getUserById(id: string): Promise<GetUserByIdResponse> {
 
   const data = await res.json()
 
-  console.log('User data:', data)
-
   return data
 }
