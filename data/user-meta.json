@@ -1,547 +1,318 @@
 [
   {
     "user_id": "595b3a11-a231-424a-a5fa-ee77711e1fa9",
-    "days": [
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Campinas",
-    "username": "8qKathy"
+    "days": ["Terça", "Quarta", "Quinta", "Sábado"],
+    "city": "Rio de Janeiro",
+    "username": "6jGina"
   },
   {
     "user_id": "0d8843de-1fa9-493a-88a8-7ae3703daab1",
-    "days": [
-      "Quinta"
-    ],
-    "city": "Recife",
-    "username": "i8Kathy"
+    "days": ["Domingo"],
+    "city": "Rio de Janeiro",
+    "username": "iqXander"
   },
   {
     "user_id": "7735a979-f8fd-43c7-b00d-ccc7b4ec2a7c",
-    "days": [
-      "Terça",
-      "Quarta",
-      "Sexta"
-    ],
-    "city": "Rio de Janeiro",
-    "username": "s7Liam"
+    "days": ["Domingo", "Terça", "Quinta", "Sábado"],
+    "city": "Campinas",
+    "username": "pclaverna58"
   },
   {
     "user_id": "4e22969f-07ae-4f9b-90a8-0ecf2b9ff4a0",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Teresina",
-    "username": "suIvy"
+    "days": ["Segunda", "Quarta", "Sábado"],
+    "city": "Brasília",
+    "username": "62Diana"
   },
   {
     "user_id": "b87ae6bd-730b-4f91-913a-35d513798d33",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sábado"
-    ],
-    "city": "Porto Alegre",
-    "username": "pgHannah"
+    "days": ["Terça"],
+    "city": "Salvador",
+    "username": "xiGina"
   },
   {
     "user_id": "7a379d72-c913-4bbf-b00f-056f9c869a81",
-    "days": [
-      "Quinta"
-    ],
-    "city": "São Luís",
-    "username": "evselena89"
+    "days": ["Domingo", "Sábado"],
+    "city": "Fortaleza",
+    "username": "atQuinn"
   },
   {
     "user_id": "93a4241a-562a-48ad-95ce-4856dfd201bd",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sábado"
-    ],
-    "city": "Teresina",
-    "username": "hcRyan"
+    "days": ["Quarta", "Quinta", "Sábado"],
+    "city": "Belém",
+    "username": "07laverna58"
   },
   {
     "user_id": "122f91a8-f894-47be-b197-818784385612",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Quinta",
-      "Sábado"
-    ],
-    "city": "Teresina",
-    "username": "kpPaul"
+    "days": ["Domingo", "Segunda", "Terça", "Quinta", "Sexta"],
+    "city": "Manaus",
+    "username": "khlaverna58"
   },
   {
     "user_id": "5eefdb6c-1727-498a-8e04-3f61e8d1fb3c",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sábado"
-    ],
-    "city": "João Pessoa",
-    "username": "2slaverna58"
+    "days": ["Segunda", "Terça", "Quinta"],
+    "city": "São Luís",
+    "username": "dsselena89"
   },
   {
     "user_id": "496bf634-8435-4603-91ac-b4aac86143b6",
-    "days": [
-      "Quarta"
-    ],
-    "city": "São Luís",
-    "username": "tcFrank"
+    "days": ["Quarta"],
+    "city": "São Paulo",
+    "username": "c2Hannah"
   },
   {
     "user_id": "9fa706ec-9a17-4b81-8654-1c814c881c17",
-    "days": [
-      "Segunda",
-      "Quarta",
-      "Sexta"
-    ],
-    "city": "Porto Alegre",
-    "username": "rvIvy"
+    "days": ["Sexta"],
+    "city": "Belo Horizonte",
+    "username": "t1Eve"
   },
   {
     "user_id": "8cdc3bb2-a82a-4d88-bb73-aac7091a8283",
-    "days": [
-      "Quarta",
-      "Sexta"
-    ],
-    "city": "Curitiba",
-    "username": "v5Tyler"
+    "days": ["Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "city": "Porto Alegre",
+    "username": "muNoah"
   },
   {
     "user_id": "464bae7e-2cf7-48dc-b62e-1144fab99bbb",
     "days": [
+      "Domingo",
+      "Segunda",
+      "Terça",
       "Quarta",
       "Quinta",
       "Sexta",
       "Sábado"
     ],
-    "city": "São Luís",
-    "username": "xhPaul"
+    "city": "Belo Horizonte",
+    "username": "xsGina"
   },
   {
     "user_id": "66c09e2b-d1cd-45c6-88c0-43a00b779b77",
-    "days": [
-      "Terça"
-    ],
-    "city": "Maceió",
-    "username": "8pKathy"
+    "days": ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "city": "João Pessoa",
+    "username": "9vSophia"
   },
   {
     "user_id": "a29e29de-9e6f-430a-a898-d406390d669e",
-    "days": [
-      "Terça",
-      "Sábado"
-    ],
-    "city": "Maceió",
-    "username": "jslaverna58"
+    "days": ["Terça", "Quarta", "Quinta"],
+    "city": "Brasília",
+    "username": "kvLiam"
   },
   {
     "user_id": "556ae62f-4335-4bcd-bc43-f58723d71e76",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Quarta",
-      "Quinta",
-      "Sábado"
-    ],
-    "city": "Campinas",
-    "username": "w0Diana"
+    "days": ["Domingo", "Segunda", "Quarta", "Sexta", "Sábado"],
+    "city": "Belém",
+    "username": "bjOlivia"
   },
   {
     "user_id": "7f749f1e-ad58-49d2-9d69-81fc169fb5be",
-    "days": [
-      "Quarta",
-      "Sexta"
-    ],
-    "city": "São Paulo",
-    "username": "vpMia"
+    "days": ["Domingo", "Segunda", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "city": "Recife",
+    "username": "ujQuinn"
   },
   {
     "user_id": "bf6e181e-4ddc-47b1-86ab-c37bc15f333f",
-    "days": [
-      "Quarta"
-    ],
-    "city": "Brasília",
-    "username": "a7Willow"
+    "days": ["Terça", "Sábado"],
+    "city": "Belém",
+    "username": "shXander"
   },
   {
     "user_id": "81a8b52e-0d6a-48ab-8884-4a12c7c4ff17",
-    "days": [
-      "Domingo",
-      "Terça",
-      "Quarta",
-      "Sexta"
-    ],
-    "city": "Manaus",
-    "username": "reWillow"
+    "days": ["Domingo", "Segunda", "Terça", "Sexta", "Sábado"],
+    "city": "Porto Alegre",
+    "username": "i9laverna58"
   },
   {
     "user_id": "346d471b-4a96-424e-816f-e4bf2d051de7",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quinta"
-    ],
-    "city": "Belo Horizonte",
-    "username": "4cFrank"
+    "days": ["Domingo", "Segunda", "Terça"],
+    "city": "São Paulo",
+    "username": "80Jack"
   },
   {
     "user_id": "ad9f59d2-45d8-4397-a3a2-5d844f8e593a",
-    "days": [
-      "Domingo",
-      "Terça",
-      "Sexta"
-    ],
-    "city": "Recife",
-    "username": "6pQuinn"
+    "days": ["Domingo", "Quarta", "Sexta"],
+    "city": "Campinas",
+    "username": "muFrank"
   },
   {
     "user_id": "c3dec514-8a1a-478d-a92f-96048267edd6",
-    "days": [
-      "Domingo",
-      "Segunda"
-    ],
-    "city": "Goiânia",
-    "username": "g8laverna58"
+    "days": ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sábado"],
+    "city": "São Luís",
+    "username": "vpWillow"
   },
   {
     "user_id": "47d618ba-9eb1-4050-a8d9-edeb78c1c97b",
-    "days": [
-      "Segunda",
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Rio de Janeiro",
-    "username": "9oSonya64"
+    "days": ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "city": "Salvador",
+    "username": "0dRyan"
   },
   {
     "user_id": "9d45ee0b-d160-47f4-b91a-87d5a0cbf9aa",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sexta"
-    ],
-    "city": "São Luís",
-    "username": "djFrank"
+    "days": ["Segunda", "Sábado"],
+    "city": "Salvador",
+    "username": "fzTyler"
   },
   {
     "user_id": "4b6c80e8-e583-4e40-b34f-8536db3a719a",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Natal",
-    "username": "cuHannah"
+    "days": ["Domingo", "Segunda", "Terça", "Quarta", "Sexta", "Sábado"],
+    "city": "Campinas",
+    "username": "gzIvy"
   },
   {
     "user_id": "277c3ef6-a34c-4628-82aa-e0f234540e28",
-    "days": [
-      "Terça",
-      "Quarta",
-      "Sexta"
-    ],
-    "city": "Belo Horizonte",
-    "username": "ejSonya64"
+    "days": ["Sábado"],
+    "city": "São Luís",
+    "username": "prTyler"
   },
   {
     "user_id": "046049c7-0fad-4ea7-8a3c-c44111d2eb05",
-    "days": [
-      "Quinta"
-    ],
-    "city": "João Pessoa",
-    "username": "qoWillow"
+    "days": ["Domingo", "Segunda", "Terça", "Quarta", "Sexta", "Sábado"],
+    "city": "São Paulo",
+    "username": "5uPaul"
   },
   {
     "user_id": "faa0361c-33cd-40e9-a1bc-ec39a4b9946a",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Quarta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "São Paulo",
-    "username": "r0Uma"
+    "days": ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "city": "Porto Alegre",
+    "username": "mplaverna58"
   },
   {
     "user_id": "24566d5a-5599-41d0-9d94-6dd74125b17a",
-    "days": [
-      "Sexta"
-    ],
-    "city": "João Pessoa",
-    "username": "w2Quinn"
+    "days": ["Domingo", "Terça", "Quarta", "Sábado"],
+    "city": "Campinas",
+    "username": "6qJack"
   },
   {
     "user_id": "ef95a6e8-d744-4215-af1a-cdb9ff043bc7",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Fortaleza",
-    "username": "h6Willow"
+    "days": ["Segunda", "Terça"],
+    "city": "João Pessoa",
+    "username": "r6Yara"
   },
   {
     "user_id": "7b37f71a-5bec-4b8f-852f-23070834b586",
-    "days": [
-      "Terça"
-    ],
-    "city": "Belo Horizonte",
-    "username": "w8Ivy"
+    "days": ["Sexta", "Sábado"],
+    "city": "Natal",
+    "username": "seGina"
   },
   {
     "user_id": "b84a54e6-cefb-41a8-ae52-2d2df9e4d52d",
-    "days": [
-      "Domingo",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Campinas",
-    "username": "j2Willow"
+    "days": ["Terça", "Quarta"],
+    "city": "São Paulo",
+    "username": "r5Violet"
   },
   {
     "user_id": "88eac755-f734-49d4-877b-af46e6127d81",
-    "days": [
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Natal",
-    "username": "pnFrank"
+    "days": ["Domingo", "Segunda"],
+    "city": "Rio de Janeiro",
+    "username": "vxLiam"
   },
   {
     "user_id": "e908d85a-0dad-44d1-b29d-0c752c18dced",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Quarta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Rio de Janeiro",
-    "username": "4pZoe"
+    "days": ["Domingo", "Segunda", "Quinta"],
+    "city": "Belo Horizonte",
+    "username": "4lSonya64"
   },
   {
     "user_id": "8e7a90f3-6f0c-40b3-8b6c-d115592b90c3",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Rio de Janeiro",
-    "username": "h1Violet"
+    "days": ["Terça"],
+    "city": "Curitiba",
+    "username": "guZoe"
   },
   {
     "user_id": "5c8fdfd3-0660-4804-bf49-5be9562140ff",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sexta"
-    ],
-    "city": "Campinas",
-    "username": "n7Noah"
+    "days": ["Domingo", "Sexta", "Sábado"],
+    "city": "Rio de Janeiro",
+    "username": "f8Kathy"
   },
   {
     "user_id": "74bc900c-b5ab-4b91-a9dd-194a9079fd7f",
-    "days": [
-      "Domingo",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sábado"
-    ],
-    "city": "Belo Horizonte",
-    "username": "o9Diana"
+    "days": ["Domingo", "Quarta"],
+    "city": "Teresina",
+    "username": "1uYara"
   },
   {
     "user_id": "1ec48c08-80ae-4fdb-9b33-75a7adeeb3a9",
-    "days": [
-      "Domingo",
-      "Quarta",
-      "Sábado"
-    ],
-    "city": "Maceió",
-    "username": "klSophia"
+    "days": ["Quarta", "Sábado"],
+    "city": "Curitiba",
+    "username": "1mMia"
   },
   {
     "user_id": "99604544-5d69-4774-b2a6-ce406a8c630a",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Belo Horizonte",
-    "username": "00Zoe"
+    "days": ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta"],
+    "city": "Porto Alegre",
+    "username": "x0Gina"
   },
   {
     "user_id": "42db0797-5b96-47d2-82ca-3191f3a6ca89",
     "days": [
       "Domingo",
       "Segunda",
-      "Quarta",
-      "Quinta",
-      "Sábado"
-    ],
-    "city": "Teresina",
-    "username": "edZoe"
-  },
-  {
-    "user_id": "b3abe450-387d-482d-b5ae-c5f2b942fad6",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Campinas",
-    "username": "scWillow"
-  },
-  {
-    "user_id": "1d45aec0-a7bd-40c1-9866-1140bb4a9072",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Natal",
-    "username": "nbUma"
-  },
-  {
-    "user_id": "da71efc2-3fe8-455f-9d87-313be9dd33b1",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta"
-    ],
-    "city": "Goiânia",
-    "username": "olWillow"
-  },
-  {
-    "user_id": "caafb229-2914-4ab1-8e07-c7d54edef17e",
-    "days": [
-      "Domingo",
-      "Segunda",
       "Terça",
       "Quarta",
       "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "São Paulo",
-    "username": "s3Eve"
-  },
-  {
-    "user_id": "702cd454-e8f9-4983-9a70-e1a1697f3319",
-    "days": [
-      "Domingo"
-    ],
-    "city": "Manaus",
-    "username": "60Sophia"
-  },
-  {
-    "user_id": "47b7bc9f-c013-44da-8a64-1dc06f6aef6d",
-    "days": [
-      "Terça"
-    ],
-    "city": "Natal",
-    "username": "njEve"
-  },
-  {
-    "user_id": "689c4859-783b-4d7f-b7a8-38aca7ae9255",
-    "days": [
-      "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sexta",
-      "Sábado"
-    ],
-    "city": "Rio de Janeiro",
-    "username": "v3Diana"
-  },
-  {
-    "user_id": "042af298-ff52-49a9-b710-2fbd12f363ce",
-    "days": [
-      "Segunda",
-      "Terça",
-      "Sexta"
-    ],
-    "city": "Brasília",
-    "username": "5bLiam"
-  },
-  {
-    "user_id": "b58600eb-e2ae-45c3-af67-6ce784cc60ea",
-    "days": [
-      "Segunda",
-      "Terça",
-      "Quarta",
       "Sexta",
       "Sábado"
     ],
     "city": "Salvador",
-    "username": "exMia"
+    "username": "rgZoe"
+  },
+  {
+    "user_id": "b3abe450-387d-482d-b5ae-c5f2b942fad6",
+    "days": ["Terça", "Quarta", "Sexta", "Sábado"],
+    "city": "Rio de Janeiro",
+    "username": "owRyan"
+  },
+  {
+    "user_id": "1d45aec0-a7bd-40c1-9866-1140bb4a9072",
+    "days": ["Domingo", "Segunda", "Quarta", "Quinta", "Sábado"],
+    "city": "Manaus",
+    "username": "cxIvy"
+  },
+  {
+    "user_id": "da71efc2-3fe8-455f-9d87-313be9dd33b1",
+    "days": ["Domingo", "Segunda"],
+    "city": "Teresina",
+    "username": "h0Frank"
+  },
+  {
+    "user_id": "caafb229-2914-4ab1-8e07-c7d54edef17e",
+    "days": ["Segunda", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "city": "Belém",
+    "username": "qnSophia"
+  },
+  {
+    "user_id": "702cd454-e8f9-4983-9a70-e1a1697f3319",
+    "days": ["Domingo", "Segunda", "Terça", "Quinta", "Sexta", "Sábado"],
+    "city": "Manaus",
+    "username": "opQuinn"
+  },
+  {
+    "user_id": "47b7bc9f-c013-44da-8a64-1dc06f6aef6d",
+    "days": ["Domingo", "Segunda", "Terça", "Quinta", "Sexta"],
+    "city": "São Luís",
+    "username": "svselena89"
+  },
+  {
+    "user_id": "689c4859-783b-4d7f-b7a8-38aca7ae9255",
+    "days": ["Domingo", "Segunda", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "city": "Goiânia",
+    "username": "onViolet"
+  },
+  {
+    "user_id": "042af298-ff52-49a9-b710-2fbd12f363ce",
+    "days": ["Quarta", "Quinta", "Sexta", "Sábado"],
+    "city": "Porto Alegre",
+    "username": "teYara"
+  },
+  {
+    "user_id": "b58600eb-e2ae-45c3-af67-6ce784cc60ea",
+    "days": ["Terça", "Sexta", "Sábado"],
+    "city": "Maceió",
+    "username": "03Diana"
   },
   {
     "user_id": "771d1924-9919-4174-be8f-4b1dae2c4e8a",
-    "days": [
-      "Domingo"
-    ],
-    "city": "Belo Horizonte",
-    "username": "talaverna58"
+    "days": ["Domingo", "Segunda", "Quarta", "Sexta", "Sábado"],
+    "city": "Fortaleza",
+    "username": "2nWillow"
   }
 ]
