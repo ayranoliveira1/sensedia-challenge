@@ -4,9 +4,10 @@ import { useEffect, useRef, useState } from 'react'
 
 interface UserDropDownProps {
   children: React.ReactNode
+  options: { label: string; route: string }[]
 }
 
-const UserDropdown: React.FC<UserDropDownProps> = ({ children }) => {
+const UserDropdown: React.FC<UserDropDownProps> = ({ children, options }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
   const dropDownRef = useRef<HTMLDivElement>(null)
@@ -40,14 +41,6 @@ const UserDropdown: React.FC<UserDropDownProps> = ({ children }) => {
     }
   }, [isOpen])
 
-  const menuItems = [
-    { label: 'Lista de amigos', onClick: () => toggleDropDown() },
-    { label: 'Artigos salvos', onClick: () => toggleDropDown() },
-    { label: 'Notificações', onClick: () => toggleDropDown() },
-    { label: 'Preferências', onClick: () => toggleDropDown() },
-    { label: 'Fechar Sessão', onClick: () => toggleDropDown() },
-  ]
-
   return (
     <div className="relative" ref={dropDownRef}>
       <div
@@ -78,12 +71,12 @@ const UserDropdown: React.FC<UserDropDownProps> = ({ children }) => {
           />
         )}
 
-        {menuItems.map((item, index) => (
+        {options.map((item, index) => (
           <div
             key={index}
             className="w-full text-left px-4 py-2 text-sm cursor-pointer hover:bg-neutral-800 relative z-10"
             role="menuitem"
-            onClick={item.onClick}
+            onClick={toggleDropDown}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
           >

@@ -4,7 +4,7 @@ import {
   AlertDialog,
   AlertDialogTrigger,
 } from '../../../../components/ui/alert-dialog'
-import DeleteUserModal from '@/app/users/components/delete-user-modal'
+import DeleteUserModal from '../delete-user-modal'
 
 interface TableProps {
   paginatedUsers: UserType[]

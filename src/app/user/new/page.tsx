@@ -1,5 +1,5 @@
-import UserForm from '@/app/users/new/components/user-form'
 import InfoBlocks from './components/info-blocks'
+import UserForm from './components/user-form'
 
 const UserNewPage = () => {
   return (

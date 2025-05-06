@@ -3,12 +3,12 @@ import { CircleHelpIcon } from 'lucide-react'
 import { IoAppsSharp } from 'react-icons/io5'
 import Link from 'next/link'
 import UserDropDown from './user-dropdown'
+import { getUserProfile } from '@/http/get-user-profile'
+import Breadcrumb from './breadcrumb'
 
-const user = {
-  name: 'Ayran Oliveira',
-}
+const Header = async () => {
+  const userProfile = await getUserProfile()
 
-const Header = () => {
   return (
     <header className="sticky top-0 z-50">
       <section className="bg-[#3D3D3D] h-[87px] w-full text-white flex items-center px-8">
@@ -27,6 +27,8 @@ const Header = () => {
           />
 
           <h1 className="font-bold text-sm text-[#8556AA]">BEM-VINDO</h1>
+
+          <Breadcrumb />
         </div>
 
         <div className="flex items-center gap-1">
@@ -37,19 +39,19 @@ const Header = () => {
 
           <div className="ml-10 mr-1 w-[3px] h-[40px] bg-gray-300"></div>
 
-          <UserDropDown>
+          <UserDropDown options={userProfile.menu}>
             <div className="flex items-center gap-4">
               <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#8556AA] text-white font-bold">
-                {user.name
+                {userProfile.name
                   .trim()
                   .split(' ')
                   .filter(Boolean)
                   .slice(0, 2)
-                  .map((n) => n[0])
+                  .map((n) => n[0].toUpperCase())
                   .join('')}
               </span>
 
-              <p className="text-sm">{user.name}</p>
+              <p className="text-sm">{userProfile.name}</p>
             </div>
           </UserDropDown>
         </div>
