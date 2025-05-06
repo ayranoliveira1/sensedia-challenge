@@ -8,7 +8,7 @@ interface SearchProps {
 
 const Search: React.FC<SearchProps> = ({ search, setSearch, setPage }) => {
   return (
-    <div className="relative mb-8">
+    <div className="relative mb-8" data-testid="search-container">
       <input
         type="text"
         placeholder="Procurar"
