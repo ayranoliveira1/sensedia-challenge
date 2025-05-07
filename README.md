@@ -1,3 +1,11 @@
+## ⚙️ Configuração do Ambiente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/ayranoliveira1/sensedia-challenge.git
+   cd sensedia-challenge
+   ```
+
 ## 📥 Instalação
 
 ```bash
