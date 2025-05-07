@@ -7,6 +7,7 @@ import { createUser, CreateUsersResponse } from '@/http/create-user'
 import { toast } from 'sonner'
 import { createUserMetaData } from '@/http/create-user-metadata'
 import { useRouter } from 'next/navigation'
+import { LoaderCircleIcon } from 'lucide-react'
 
 const schema = z.object({
   username: z.string().min(1, 'Nome de usuário é obrigatório'),
@@ -186,9 +187,16 @@ const UserForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-purple-600 cursor-pointer lg:text-base text-sm text-white font-semibold px-6 py-2 rounded-full hover:bg-purple-700 disabled:opacity-50"
+          className="bg-purple-600 flex items-center gap-2 cursor-pointer lg:text-base text-sm text-white font-semibold px-6 py-2 rounded-full hover:bg-purple-700 disabled:opacity-50"
         >
-          {isSubmitting ? 'Enviando...' : 'REGISTRAR'}
+          {isSubmitting ? (
+            <>
+              <LoaderCircleIcon className="animate-spin size-4" />
+              Enviando
+            </>
+          ) : (
+            'REGISTRAR'
+          )}
         </button>
         <button
           type="button"

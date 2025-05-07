@@ -16,7 +16,7 @@ export const createUserMetaData = async ({
   username,
 }: CreateUserMetaDataProps) => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_FRONTEND_URLL}/api/usermetadata`,
+    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/api/usermetadata`,
     {
       method: 'POST',
       headers: {
