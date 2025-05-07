@@ -68,6 +68,7 @@ const UserDropdown: React.FC<UserDropDownProps> = ({ children, options }) => {
             style={{
               top: `${hoverIndex * 36}px`,
             }}
+            data-testid="hover-indicator"
           />
         )}
 
