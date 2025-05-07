@@ -15,7 +15,7 @@ export const createUserMetaData = async ({
   days,
   username,
 }: CreateUserMetaDataProps) => {
-  const res = await fetch(`http://localhost:3000/api/usermetadata`, {
+  const res = await fetch(`${process.env.FRONTEND_URL}/api/usermetadata`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

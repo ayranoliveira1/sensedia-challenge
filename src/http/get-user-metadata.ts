@@ -14,7 +14,7 @@ interface GetUsersResponse {
 }
 
 export const getUsersMetaData = async (): Promise<GetUsersResponse> => {
-  const res = await fetch(`http://localhost:3000/api/usermetadata`, {
+  const res = await fetch(`${process.env.FRONTEND_URL}/api/usermetadata`, {
     method: 'GET',
   })
 
