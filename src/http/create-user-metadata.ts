@@ -15,13 +15,16 @@ export const createUserMetaData = async ({
   days,
   username,
 }: CreateUserMetaDataProps) => {
-  const res = await fetch(`${process.env.FRONTEND_URL}/api/usermetadata`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_FRONTEND_URLL}/api/usermetadata`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ user_id, city, days, username }),
     },
-    body: JSON.stringify({ user_id, city, days, username }),
-  })
+  )
 
   if (!res.ok) {
     throw new Error('Failed to fetch user metadata')

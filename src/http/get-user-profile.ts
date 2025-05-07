@@ -9,7 +9,7 @@ interface GetUsersResponse {
 }
 
 export const getUserProfile = async (): Promise<GetUsersResponse> => {
-  const res = await fetch(`${process.env.FRONTEND_URL}/api/user`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_FRONTEND_URL}/api/user`, {
     method: 'GET',
   })
 
